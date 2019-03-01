@@ -1,0 +1,130 @@
+{
+    "add_is_visible": false,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 200,
+        "width": 200
+    },
+    "display": "Timex-List Dates",
+    "edit_mode_image": "//s3.amazonaws.com/appforest_uf/f1551483832226x179663775991137250/calendar.svg",
+    "events": {
+        "AAl": {
+            "caption": "Results Available",
+            "doc": "Triggers an event when the results become available",
+            "name": "results_available"
+        }
+    },
+    "fields": {
+        "AAW": {
+            "caption": "Timex-List Dates",
+            "editor": "Label",
+            "name": "timex-list_dates",
+            "rank": 0
+        },
+        "AAX": {
+            "caption": "Use this element to get the quarter, month, or week of where a date belongs",
+            "editor": "Label",
+            "name": "use_this_element_to_get_the_quarter,_month,_or_week_of_where_a_date_belongs",
+            "rank": 1
+        },
+        "AAY": {
+            "caption": "INPUT VARIABLES",
+            "editor": "Label",
+            "name": "input_variables",
+            "rank": 2
+        },
+        "AAZ": {
+            "caption": "Focus Date",
+            "doc": "The date in focus of the options below",
+            "editor": "DynamicValue",
+            "name": "focus_date",
+            "rank": 3,
+            "value": "date"
+        },
+        "AAa": {
+            "caption": "Target Start",
+            "default_val": "week",
+            "doc": "The start date",
+            "editor": "Dropdown",
+            "name": "target_start",
+            "options": "year,quarter,month,isoWeek,week",
+            "rank": 4
+        },
+        "AAb": {
+            "caption": "Target Stretch",
+            "default_val": 0,
+            "doc": "Number of days t stretch the end date by.  For example the isoWeek + an additional day",
+            "editor": "DynamicValue",
+            "name": "target_stretch",
+            "optional": true,
+            "rank": 6,
+            "value": "number"
+        },
+        "AAc": {
+            "caption": "Unit Type",
+            "default_val": "day",
+            "doc": "What to return",
+            "editor": "Dropdown",
+            "name": "unit_type",
+            "options": "year,quarter,month,isoWeek,week,day,hour",
+            "rank": 7
+        },
+        "AAd": {
+            "caption": "Target End",
+            "default_val": "week",
+            "doc": "The start date",
+            "editor": "Dropdown",
+            "name": "target_end",
+            "options": "year,quarter,month,isoWeek,week",
+            "rank": 5
+        },
+        "AAh": {
+            "caption": "OUTPUT OPTIONS",
+            "editor": "Label",
+            "name": "output_options",
+            "rank": 8
+        },
+        "AAj": {
+            "caption": "Range Option",
+            "default_val": "Start Date/Time",
+            "doc": "Determines how the required output for the ranges",
+            "editor": "Dropdown",
+            "name": "range_option",
+            "options": "Start Date/Time,End Date/Time,Previous Date/Time",
+            "rank": 9
+        }
+    },
+    "icon": "ion-android-calendar",
+    "property_applications": {
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "AAe": {
+            "caption": "Date Results",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "date_results",
+            "value": "date"
+        },
+        "AAf": {
+            "caption": "Range Results",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "range_results",
+            "value": "date_range"
+        },
+        "AAg": {
+            "caption": "Count",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "count",
+            "value": "number"
+        }
+    }
+}
